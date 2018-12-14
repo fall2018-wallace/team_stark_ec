@@ -10,7 +10,6 @@ sum(is.na(clean_data))
 length(clean_data)
 dim(clean_data)
 
-clean_data
 ## 75% of the sample size
 smp_size <- floor(0.75 * nrow(clean_data))
 train_ind <- sample(seq_len(nrow(clean_data)), size = smp_size)
