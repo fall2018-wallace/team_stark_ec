@@ -10,3 +10,10 @@ sum(is.na(clean_data))
 length(clean_data)
 dim(clean_data)
 
+data(clean_data)
+
+## 75% of the sample size
+smp_size <- floor(0.75 * nrow(mtcars))
+train_ind <- sample(seq_len(nrow(mtcars)), size = smp_size)
+
+train <- mtcars[train_ind, ]
