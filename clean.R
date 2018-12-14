@@ -16,3 +16,4 @@ smp_size <- floor(0.75 * nrow(clean_data))
 train_ind <- sample(seq_len(nrow(clean_data)), size = smp_size)
 
 train <- mtcars[train_ind, ]
+train_ind
